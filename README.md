@@ -1,96 +1,187 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/rI46BDue)
-# Práctica 4.1: Progr4amación orientada a objetos
 
-Apóyate en los siguientes recursos para realizar la práctica:
-
-[U4: 1. POO](./EjerciciosSencillosPOO.md)
-
-> ATENCIÓN: DURANTE LA DOCUMENTACIÓN DE LA PRÁCTICA, ELIMINA TODO AQUELLO QUE NO APLIQUE. PEEEEEEEROOOOOOO, ANTES DE ELIMINAR ALGO, PIENSA SI APLICA O NO.
-
----
-
-# Título de la Actividad
+# Práctica 4.1: Programación Orientada a Objetos en Kotlin
 
 ## Identificación de la Actividad
 
-- **ID de la Actividad:** [ID de la actividad]
-- **Módulo:** [Nombre del módulo] (`PROG`, `IS`, `EDES`, etc.)
-- **Unidad de Trabajo:** [Número y nombre de la unidad de trabajo]
-- **Fecha de Creación:** [Fecha de creación]
-- **Fecha de Entrega:** [Fecha de entrega]
-- **Alumno(s):**
-  - **Nombre y Apellidos:** [Nombre y Apellidos del alumno o integrantes del grupo]
-  - **Correo electrónico:** [Correo electrónico g.educaand.es]
-  - **Iniciales del Alumno/Grupo:** [Iniciales del alumno o del grupo]
+- **ID de la Actividad:** 4.1  
+- **Módulo:** PROG (Programación)  
+- **Unidad de Trabajo:** Unidad 4: Programación Orientada a Objetos  
+- **Fecha de Creación:** 15/1/25
+- **Fecha de Entrega:** 16/1/25
+- **Alumno(s):**  
+  - **Nombre y Apellidos:** [Nombre y Apellidos del alumno]  
+  - **Correo electrónico:** alopgau418@g.educaand.es  
+  - **Iniciales del Alumno/Grupo:** ALG
 
 ## Descripción de la Actividad
 
-[Descripción detallada de la actividad, objetivos, y contexto necesario para comprenderla. Explicar en qué consiste la actividad y qué se espera que el alumno desarrolle o implemente.]
+Esta práctica consiste en la implementación de varios programas en Kotlin que demuestran los conceptos fundamentales de la Programación Orientada a Objetos (POO). Se han desarrollado diferentes clases que representan entidades del mundo real como cuentas bancarias, estudiantes, libros, productos y vehículos, cada una con sus propiedades y comportamientos específicos.
+
+Los objetivos principales son:
+- Implementar clases con constructores, propiedades y métodos
+- Manejar excepciones con bloques try-catch
+- Utilizar inicializadores (`init`) y validaciones (`require`)
+- Implementar getters y setters personalizados
+- Crear constructores secundarios
+- Demostrar encapsulación y abstracción
 
 ## Instrucciones de Compilación y Ejecución
 
-1. **Requisitos Previos:**
+### Requisitos Previos
+- Kotlin 1.8+ o superior
+- IntelliJ IDEA o cualquier IDE que soporte Kotlin
+- Kotlin compiler (kotlinc)
 
-   - [Lenguaje de programación y versión]
-   - [Entorno de desarrollo o dependencias necesarias]
-2. **Pasos para Compilar el Código:**
+### Compilación y Ejecución Individual
+Cada programa se puede compilar y ejecutar por separado:
 
-   ```bash
-   [Comando para compilar el código]
-   ```
-3. **Pasos para Ejecutar el Código:**
+```bash
+# Compilar y ejecutar el programa de Cuenta Bancaria
+kotlinc Banco.kt CuentaBancaria.kt -include-runtime -d Banco.jar
+java -jar Banco.jar
 
-   ```bash
-   [Comando para ejecutar la aplicación]
-   ```
-4. **Ejecución de Pruebas:**
+# Compilar y ejecutar el programa de Estudiantes
+kotlinc Estudiante.kt EstudianteMain.kt -include-runtime -d Estudiante.jar
+java -jar Estudiante.jar
 
-   ```bash
-   [Comandos para ejecutar pruebas, si las hubiera]
-   ```
+# Compilar y ejecutar el programa de Libros
+kotlinc Libro.kt LibroMain.kt -include-runtime -d Libro.jar
+java -jar Libro.jar
+
+# Compilar y ejecutar el programa de Productos
+kotlinc Producto.kt ProductoMain.kt -include-runtime -d Producto.jar
+java -jar Producto.jar
+
+# Compilar y ejecutar el programa de Vehículos
+kotlinc Vehiculo.kt Viaje.kt -include-runtime -d Viaje.jar
+java -jar Viaje.jar
+```
+
+### Ejecución desde IDE
+1. Abrir el proyecto en IntelliJ IDEA
+2. Ejecutar cada archivo `Main.kt` individualmente haciendo clic derecho y seleccionando "Run"
 
 ## Desarrollo de la Actividad
 
 ### Descripción del Desarrollo
+Se han implementado 5 ejercicios independientes que abordan diferentes aspectos de la POO:
 
-[Explicación de cómo se ha abordado el desarrollo de la actividad, incluyendo las decisiones de diseño, estructura del código y enfoque de resolución de problemas. Se recomienda adjuntar diagramas o capturas de pantalla si es necesario.]
+1. **Cuenta Bancaria**: Gestión de saldo con manejo de excepciones
+2. **Estudiante**: Validación de notas y propiedades personalizadas
+3. **Libro**: Constructores primarios y secundarios
+4. **Producto**: Gestión de inventario con métodos de venta y reabastecimiento
+5. **Vehículo**: Registro de kilometraje y detalles del vehículo
+
+Cada ejercicio sigue el principio de encapsulación, manteniendo las propiedades privadas y proporcionando métodos públicos para interactuar con los objetos.
 
 ### Código Fuente
 
-[Aquí se incluirá un enlace directo a los archivos de código fuente en el repositorio, por ejemplo, si se está usando GitHub: `src/main.kt` o algún enlace directo.]
+#### Ejercicio 1: Cuenta Bancaria
+- **Clase principal:** [CuentaBancaria.kt](CuentaBancaria.kt)
+- **Programa principal:** [Banco.kt](Banco.kt)
 
-[Si hay varios ejercicios, habrá una documentación, por cada uno de los ejercicios.]
-[Por cada ejercicio, habrá enlaces embebidos de código a las clases principales y programa principal `main` ]
+#### Ejercicio 2: Estudiante
+- **Clase principal:** [Estudiante.kt](Estudiante.kt)
+- **Programa principal:** [EstudianteMain.kt](EstudianteMain.kt)
+
+#### Ejercicio 3: Libro
+- **Clase principal:** [Libro.kt](Libro.kt)
+- **Programa principal:** [LibroMain.kt](LibroMain.kt)
+
+#### Ejercicio 4: Producto
+- **Clase principal:** [Producto.kt](Producto.kt)
+- **Programa principal:** [ProductoMain.kt](ProductoMain.kt)
+
+#### Ejercicio 5: Vehículo
+- **Clase principal:** [Vehiculo.kt](Vehiculo.kt)
+- **Programa principal:** [Viaje.kt](Viaje.kt)
 
 ### Ejemplos de Ejecución
 
-- **Entrada 1:** Descripción de la entrada y valor de prueba.
-- **Salida Esperada 1:** Explicación de la salida esperada y el resultado de la prueba.
+#### Ejercicio 1: Cuenta Bancaria
+```
+Entrada: Crear cuenta para Antonio, ingresar 100, retirar 50, intentar retirar 500
+Salida Esperada:
+Saldo después de la operación: 100.0
+Saldo después de la operación: 50.0
+Operación inválida
+```
+
+#### Ejercicio 2: Estudiante
+```
+Entrada: Crear estudiantes con notas válidas e inválidas
+Salida Esperada:
+Nota inválida
+Nota inválida
+Estudiante: Carlos, Nota: 8.0
+Estudiante: Pepe, Nota: 2.0
+```
+
+#### Ejercicio 3: Libro
+```
+Entrada: Crear libros con diferentes constructores
+Salida Esperada:
+Libro: El Quijote por Cervantes, Páginas: 450, Leido: false
+Libro: Caperucita por Anónimo, Páginas: 90, Leido: true
+Libro: hola por adios, Páginas: 100, Leido: false
+```
+
+#### Ejercicio 4: Producto
+```
+Entrada: Crear productos y realizar operaciones de venta y reabastecimiento
+Salida Esperada:
+Producto: Ruedas, Precio: 90.0€, Stock: 6
+Producto: Airbags, Precio: 50.0€, Stock: 7
+Producto: Parabrisas, Precio: 250.0€, Stock: 6
+Producto: Ruedas, Precio: 90.0€, Stock: 26
+```
+
+#### Ejercicio 5: Vehículo
+```
+Entrada: Registrar viaje de 50km a un Toyota Yaris
+Salida Esperada:
+Toyota Yaris con 50.0 kilómetros
+```
 
 ### Resultados de Pruebas
-
-[Aquí se detallará cómo se ha verificado la funcionalidad del código, incluyendo resultados de pruebas automatizadas o manuales, en caso de que las haya.]
+Todos los programas se han ejecutado correctamente y producen los resultados esperados:
+- ✅ La cuenta bancaria maneja correctamente los fondos insuficientes
+- ✅ El estudiante valida las notas dentro del rango 0-10
+- ✅ Los libros se crean correctamente con ambos constructores
+- ✅ Los productos gestionan adecuadamente el stock
+- ✅ El vehículo registra correctamente los kilómetros
 
 ## Documentación Adicional
 
-- **Manual de Usuario:** [Enlace a la documentación del usuario, si existe]
-- **Autorización de Permisos:** Verificar que el profesor tenga permisos de lectura en el repositorio para revisar el código.
+- **Manual de Usuario:** No aplica para esta práctica
+- **Autorización de Permisos:** El profesor tiene permisos de lectura en el repositorio
 
 ## Conclusiones
 
-[Resumen de las conclusiones alcanzadas al desarrollar la actividad, las lecciones aprendidas, y posibles mejoras que se puedan implementar en futuras entregas.]
+Esta práctica ha permitido aplicar los conceptos fundamentales de la Programación Orientada a Objetos en Kotlin de manera práctica. Se han implementado:
+
+1. **Encapsulación** mediante el uso de propiedades privadas
+2. **Abstracción** a través de la definición de interfaces claras para cada clase
+3. **Manejo de excepciones** para validar entradas y operaciones
+4. **Constructores múltiples** para diferentes casos de uso
+5. **Validaciones en tiempo de inicialización** usando `init` y `require`
+
+Los principales aprendizajes incluyen:
+- La importancia de validar datos en los setters y constructores
+- Cómo manejar excepciones de manera controlada
+- La flexibilidad de los constructores en Kotlin
+- Cómo diseñar clases cohesivas con responsabilidades bien definidas
 
 ## Referencias y Fuentes
 
-[Aquí se listarán las fuentes consultadas para el desarrollo de la actividad, tales como documentación oficial, artículos, o cualquier recurso externo relevante.]
+- Documentación oficial de Kotlin: https://kotlinlang.org/docs/
+- Guía de estilo de Kotlin: https://kotlinlang.org/docs/coding-conventions.html
+- Material de clase de la Unidad 4: Programación Orientada a Objetos
 
 ### Notas Adicionales:
 
-1. **Nombres de Archivos y Repositorios:**
-   - Asegúrate de que el nombre del archivo o repositorio siga la estructura definida: `XXX-idActividad-Iniciales`.
-2. **Permisos:**
-   - Verifica que el profesor tenga los permisos necesarios para acceder al repositorio o documento.
-3. **Formato:**
-   - Si se entrega en formato PDF o Google Docs, asegúrate de cumplir con el mínimo y máximo de folios establecidos.
-4. **Compilación y Ejecución:**
-   - Detalla claramente cómo compilar y ejecutar el código, incluyendo las instrucciones en el archivo `README.md`.
+1. **Nombres de Archivos y Repositorios:** Los archivos siguen la nomenclatura adecuada para Kotlin
+2. **Permisos:** El repositorio está configurado con permisos de lectura para el profesor
+3. **Formato:** Este README cumple con los requisitos de documentación
+4. **Compilación y Ejecución:** Se incluyen instrucciones claras para compilar y ejecutar cada programa
+```
